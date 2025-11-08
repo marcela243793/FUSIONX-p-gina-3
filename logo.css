@@ -1,0 +1,68 @@
+/* Fondo elegante y tecnológico */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #000000, #ff69b4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  text-align: center;
+}
+
+/* Texto principal FUSIONX */
+.logo-text {
+  font-size: 80px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow:
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ff1493,
+    0 0 60px #ff1493,
+    0 0 80px #ff69b4;
+  animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+/* Subtexto (lema o descripción del logo) */
+.logo-sub {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4;
+  animation: pulse 3s ease-in-out infinite alternate;
+}
+
+/* Animación del brillo neón */
+@keyframes neonGlow {
+  from {
+    text-shadow:
+      0 0 5px #ff69b4,
+      0 0 10px #ff69b4,
+      0 0 20px #ff69b4,
+      0 0 40px #ff1493;
+  }
+  to {
+    text-shadow:
+      0 0 20px #ff69b4,
+      0 0 40px #ff69b4,
+      0 0 60px #ff1493,
+      0 0 80px #ff69b4;
+  }
+}
+
+/* Animación suave del subtítulo */
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  100% { opacity: 1; text-shadow: 0 0 25px #ff69b4; }
+}
